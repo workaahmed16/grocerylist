@@ -1,4 +1,13 @@
-<h1><% @item.all.each do |item| %>
-<%= item.name %>
-<%= item.quantity %>
-<% end %></h1>
+<h1>
+	<% @item.all.each do |item| %>
+		<%= item.name %>
+	<% end %>
+</h1>
+
+<br>
+
+<h2>
+	<% @item.all.each do |item| %>
+		<%= item.quantity %>
+	<% end %>
+</h2>
