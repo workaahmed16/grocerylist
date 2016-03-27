@@ -5,29 +5,20 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-
+<div class="niceheader">
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	  Add Item
+	</button>
+</div>
   <% #bootstrap %>
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="col-xs-3">
-      <div class="circle">
-        <br />
-        My
-        <br />
-        Grocery
-        <br />
-        List
-      </div>
-</div>
 
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add Item
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -55,6 +46,10 @@
 
 <br class= "clear"/>
 
+<br>
+<br>
+<br>
+<br>
 
 <%= yield %>
 
