@@ -1,13 +1,10 @@
-<h1>
-	<% @item.all.each do |item| %>
-		<%= item.name %>
-	<% end %>
-</h1>
 
-<br>
 
-<h2>
-	<% @item.all.each do |item| %>
-		<%= item.quantity %>
-	<% end %>
-</h2>
+<% @item.each do |i| %>
+<div class="booyah-box">
+<h1><%= i.name %></h1><br />
+    <i><%= i.quantity %></i><br />
+
+</div>
+
+<% end %>
