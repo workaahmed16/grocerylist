@@ -1,8 +1,9 @@
-<h1> This is your simple form page </h1>
+
 
  <%= simple_form_for @item do |i| %>
  	<%= i.input :name, label: 'Item Name Please', error: 'Item name is mandatory, please specify one', placeholder: 'Bread' %>
- 	<%= i.input :quantity, hint: 'Only whole numbers' %>
- 	<%= i.button :submit, label: 'Submit Item' %>
+ 	<%= i.input :quantity %>
+ 	<br />
+ 	<%= i.button :submit, class: 'btn btn-danger', label: 'Submit Item' %>
  <% end %>
 
